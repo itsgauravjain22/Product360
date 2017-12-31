@@ -4,6 +4,16 @@ A 360 Product Photo sketch for NodeMcu v1.0 ESP8266 12E chip using Arduino IDE. 
 - [gmag11/FSBrowserNG](https://github.com/gmag11/FSBrowserNG)
 - [AccelStepper](http://www.airspayce.com/mikem/arduino/AccelStepper/)
 
+
+## Features
+- Automated 360 product photo shoot
+- Wifi Controlled rotating table
+- Cross Platform support via browser
+- Ability to control rotation precisely (currently, each step coresspond to a single degree rotation)
+- Ability to change gui via your web script as its built on FSBrowserNg library.
+- Simple and Easy to understand REST API.
+
+
 ## Pre-requesite
 Some settings are required to make Arduino IDE compatible with Nodemcu chip. Below are some turorial with explained details:
 - Setting up Arduino IDE for esp8266 chip: Tutorial [here](http://www.instructables.com/id/Quick-Start-to-Nodemcu-ESP8266-on-Arduino-IDE/).
