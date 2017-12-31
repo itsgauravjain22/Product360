@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>360 Product Photo</title>
+</head>
+
+<body>
+	<div class="container h-100">
+		<div class="row">
+			<div class="col-12">
+				<div class="page-header centerCustom">
+					<h1>
+						Product 360
+					</h1>
+				</div>
+				<p class="centerCustom">
+					A Product 360 shooter.
+				</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 col-md-6">
+				<h3>
+					Positioning
+				</h3>
+				<p>
+					<h4>
+						<i>Set number of steps, then click
+							<strong>Rotate!</strong>
+						</i>
+					</h4>
+				</p>
+				<div class="row">
+					<div class="col-5">
+						<div class="centerCustom">
+							<input class="centerCustom" type="number" id="no_of_steps" name="no_of_steps" min="0" max="360" step="1" value="0"  style="width:2em"></input>
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="row">
+							<div class="radio centerCustom">
+								<label>
+									<input type="radio" name="direction" value="clockwise" checked /> Clockwise
+								</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="radio">
+								<label>
+									<input type="radio" name="direction" value="anticlockwise" /> Anti Clockwise
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="col-3 centerCustom">
+						<button type="button" id="btn_rotate" class="btn btn-primary">
+							Rotate
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-6">
+				<h3>
+					Photography Control
+				</h3>
+				<p>
+					<h4>
+						<i>Control 360 photo shooting here.</i>
+					</h4>
+				</p>
+				<div class="row">
+					<div class="col-4">
+						<span>Set number of photos: </span>
+					</div>
+					<div class="col-5 centerCustom">
+						<input id="photoCount" name="photoCount" class="centerCustom" type="number" value="1" min="1" max="360" step="1" style="width:2em"></input>
+					</div>
+					<div class="col-3 centerCustom">
+						<button type="button" id="btn_count" class="btn btn-primary centerCustom">
+							Count
+						</button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-4">
+						<span>Set number of steps between two photos: </span>
+					</div>
+					<div class="col-5 centerCustom">
+						<input id="photoStepCount" name="photoStepCount" class="centerCustom" type="number" value="1" min="1" max="360" step="1" style="width:2em"></input>
+					</div>
+					<div class="col-3 centerCustom">
+						<button type="button" id="btn_shoot" class="btn btn-primary centerCustom">
+							Shoot
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--
+			//To be implemented
+		<div class="row">
+			<div class="col-12" style="margin:20px 0px">
+				<div class="progress">
+					<div class="progress-bar bg-success progress-bar-striped progress-bar-animated">
+					</div>
+				</div>
+			</div>
+		</div>
+	-->
+		<div class="row">
+			<div class="col-12">
+				<div class="row">
+					<div class="col-6 col-md-3 centerCustom">
+						<button id="status" type="button" class="btn btn-primary">
+							Status
+						</button>
+					</div>
+					<div class="col-6 col-md-3 centerCustom">
+						<button id="help" type="button" class="btn btn-info">
+							Help
+						</button>
+					</div>
+					<div class="col-6 col-md-3 centerCustom">
+						<button id="abort" type="button" class="btn btn-danger">
+							Abort
+						</button>
+					</div>
+					<div class="col-6 col-md-3 centerCustom">
+						<button id="lock" type="button" class="btn btn-warning">
+							Lock
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<link href="bootstrap.min.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+	<link rel="stylesheet" href="number.css">
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="sweeAlert2.all.min.js"></script>
+	<script type="text/javascript" src="notify.min.js"></script>
+	<script type="text/javascript" src="scripts.js"></script>
+	<script type="text/javascript" src="number.js"></script>
+</body>
+
+</html>
