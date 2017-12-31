@@ -7,7 +7,15 @@ A 360 Product Photo sketch for NodeMcu v1.0 ESP8266 12E chip using Arduino IDE. 
 ## Pre-requesite
 Some settings are required to make Arduino IDE compatible with Nodemcu chip. Below are some turorial with explained details:
 - Setting up Arduino IDE for esp8266 chip: Tutorial [here](http://www.instructables.com/id/Quick-Start-to-Nodemcu-ESP8266-on-Arduino-IDE/).
-- Arduino ESP8266 Filesystem Uploader: Tutorial [here](http://www.instructables.com/id/Using-ESP8266-SPIFFS/). Jump to step 2.
+- Arduino ESP8266 Filesystem Uploader: jump to step 2 of this [tutorial](http://www.instructables.com/id/Using-ESP8266-SPIFFS/).
+- AccelStepper Library via Sketch > Include Library > Manage Libraries...
+- [FSBrowserNG](http://www.airspayce.com/mikem/arduino/AccelStepper/) and its own dependencies:
+    - [TimeLib.h](https://github.com/PaulStoffregen/Time) Time library by Paul Stoffregen.
+    - [NtpClientLib.h](https://github.com/gmag11/NtpClient) NTP Client library by Germán Martín. 
+    - [ESPAsyncTCP.h Async TCP]( https://github.com/me-no-dev/ESPAsyncTCP) library by Me No Dev.
+    - [ESPAsyncWebServer.h HTTP Async Web Server](https://github.com/me-no-dev/ESPAsyncWebServer) library by Me No Dev.
+    - [ArduinoJson JSON]( https://github.com/bblanchon/ArduinoJson) library by Benoît Blanchon.
+
 
 ## Instruction
 1. Once arduino has been set-up for nodemcu, connect nodemcu.
